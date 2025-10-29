@@ -9,8 +9,9 @@ Metasploit Framework est un outil de pentest (test d’intrusion) open source, u
 * Créer et tester des exploits personnalisés.
 Il est inclus par défaut dans Kali Linux.
 
-## 
-Vérifier que Metasploit est bien installé :
+---
+
+📌 **Vérifier que Metasploit est bien installé :**
 ```bash
 msfconsole --version
 ```
@@ -20,15 +21,23 @@ sudo apt update
 sudo apt install metasploit-framework -y
 ```
 
-Démarrage de "postgresql"  
-
+📌 **Démarrage de "postgresql"**  
 `systemctl enable postegresql` ou `service postgresql start`  
 
-Une fois le service démarré  
+  
+📌 **Lancer metasploit**  
+``msfconsole``  
 
-``msfconsole`` permet de lancer metasploit  
+---
 
-
+## 🧭 4. Commandes de base à connaître
+Commande	Description
+help	Affiche l’aide
+search nom_du_module	Cherche un exploit, un payload ou un auxiliaire
+use chemin/du/module	Charge un module
+show options	Affiche les paramètres nécessaires
+set PARAM valeur	Définit un paramètre
+run ou exploit	Lance le module
 
 
 
