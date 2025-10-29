@@ -11,6 +11,7 @@ Il est inclus par défaut dans Kali Linux.
 
 ---
 
+## ⚙️ Démarrage  
 📌 **Vérifier que Metasploit est bien installé :**
 ```bash
 msfconsole --version
@@ -28,17 +29,29 @@ sudo apt install metasploit-framework -y
 📌 **Lancer metasploit**  
 ``msfconsole``  
 
+📌 **Vérifier le statut de la base**  
+```bash
+db_status
+``` 
+doit renvoyer `Connected to msf. Connection type: postgresql` pour vérifier que la base de données est bien connectée.  
+
 ---
 
-## 🧭 4. Commandes de base à connaître
-Commande	Description
-help	Affiche l’aide
-search nom_du_module	Cherche un exploit, un payload ou un auxiliaire
-use chemin/du/module	Charge un module
-show options	Affiche les paramètres nécessaires
-set PARAM valeur	Définit un paramètre
-run ou exploit	Lance le module
+## 🧭 Commandes de base à connaître
+| Commande                  | Description                                     |
+| ------------------------- | ----------------------------------------------- |
+| ``help``                  | Affiche l’aide                                  |
+| ``search nom_du_module``  | Cherche un exploit, un payload ou un auxiliaire |
+| ``use chemin/du/module``  | Charge un module                                |
+| ``show options``          | Affiche les paramètres nécessaires              |
+| ``set PARAM valeur``      | Définit un paramètre                            |
+| ``run ou exploit``        | Lance le module                                 |
+| ``workspace -a <MyWork>`` | Permet de créer un nouvel espace de travail     |
 
+
+``db_import /root/myXMLdoc``  
+
+---
 
 
 
