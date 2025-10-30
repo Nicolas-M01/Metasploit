@@ -82,15 +82,24 @@ use 4
 
 ![alt text](image.png)
 
-**Afficher options du module choisi**  
+**Afficher options du module choisi et les modifier**  
 ```bash
 show options
 ```
+Il suffit de choisir l'option qui nous intéresse pour lui attribuer une nouvelle valeur, exemple :
+```bash
+set RHOSTS 192.86.140.3
+```
+➡️ va cibler la machine à l'adresse IP indiquée.
 
-
-
-
-
+**Lancer le module (auxiliaire)**
+```bash
+run
+```
+ou
+```bash
+exploit
+```
 
 
 
