@@ -53,6 +53,42 @@ doit renvoyer `Connected to msf. Connection type: postgresql` pour vérifier que
 
 ---
 
+**Créer un espace de travail**  
+```bash
+workspace -a "My_Workspace"  
+``` 
+
+**Vérifier sur quel espace de travail nous sommes**  
+```bash
+workspace  
+``` 
+
+**Recherche de modules auxiliaire**  
+Exemple :
+```bash
+search portscan 
+``` 
+➡️ Va rechercher tous les modules 
+
+**Choisir son module**
+```bash
+use auxiliary/path/to/research 
+```
+ou
+```bash
+use 4
+```
+➡️ Ici "4" est le chiffre raccourci du nom du module (auxiliaire)  
+
+![alt text](image.png)
+
+**Afficher options du module choisi**  
+```bash
+show options
+```
+
+
+
 
 
 
