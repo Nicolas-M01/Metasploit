@@ -63,12 +63,19 @@ workspace -a "My_Workspace"
 workspace  
 ``` 
 
-**Recherche de modules auxiliaire**  
+**Recherche de modules auxiliaires**  
 Exemple :
 ```bash
 search portscan 
 ``` 
-➡️ Va rechercher tous les modules 
+➡️ Va rechercher tous les chemins contenant le nom "portscan"
+
+Pour une recherche affinée parmi une grande liste :
+```bash
+search type:auxiliary name:smb
+```
+➡️ Va filtrer en recherchant dans les dossiers "auxiliary", et le nom "smb"
+
 
 **Choisir son module**
 ```bash
@@ -102,6 +109,9 @@ exploit
 ```
 
 
+
+**Meterpreter**
+Meterpreter (interpréteur) se lance sur la cible une fois que l'on est connecté dessus et donc que l'execution du module a réussi.
 
 
 ## Importer scan Nmap dans MSF
